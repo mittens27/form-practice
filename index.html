@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Practice</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        Logo
+                    </div>
+                    <div>
+                        Title
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        Site description
+                    </div>
+                    <div>
+                        Catch phrase
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Let's Do This!
+                    </div>
+                    <form action="https://httpbin.org/post" method="post">
+                        <div>
+                            <div>
+                                <label for="first_name">First Name</label>
+                                <input type="text" id="first_name" name="first_name">
+                            </div>
+                            <div>
+                                <label for="user_email">Email Address</label>
+                                <input type="email" id="user_email" name="email" placeholder="you@example.com">
+                            </div>
+                            <div>
+                                <label for="user_password">Password</label>
+                                <input type="password" id="user_password" name="password">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="first_name">Last Name</label>
+                                <input type="text" id="last_name" name="last_name">
+                            </div>
+                            <div>
+                                <label for="quantity">Phone Number</label>
+                            </div>
+                                <input type="number" id="phone_number" name="phone_number" minlength="10" maxlength="10">
+                            </div>
+                            <div>
+                                <label for="confirmpassword">Confirm Password</label>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit">Create Account</button>
+                        </div>
+                        <div>Already have an account?</div>
+                        <div>Log in</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
