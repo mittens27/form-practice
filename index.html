@@ -7,65 +7,63 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div>
-            <div>
-                <div>
-                    <div>
-                        Logo
-                    </div>
-                    <div>
-                        Title
-                    </div>
+        <div id="entire">
+            <div id="leftHalf">
+                <div id="leftLogo">
+                    <img src="./images/whiteHeart.png" width="40" height="35">
+                    <div id="logo">The Pleiades</div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <div>
-                        Site description
+            <div id="rightHalf">
+                <div id="rightTop" class="rightElement">
+                    <div class="topText">
+                        Gather to explore the mysteries of the cosmos, share futuristic stories, and engage in immersive virtual reality adventures set in distant star systems. 🚀✨
                     </div>
-                    <div>
-                        Catch phrase
+                    <div class="topText">
+                        Comin' from the space to teach you of the Pleiades. 👽
                     </div>
                 </div>
-                <div>
-                    <div>
-                        Let's Do This!
-                    </div>
-                    <form action="https://httpbin.org/post" method="post">
-                        <div>
-                            <div>
-                                <label for="first_name">First Name</label>
+                <div id="rightForm" class="rightElement">
+                    <div class="topText">Let's Do This!</div>
+                    <form id="formBox" action="https://httpbin.org/post" method="post">
+                        <div class="formColumn" id="firstFormBox">
+                            <div class="formSec">
+                                <label for="first_name">FIRST NAME</label>
                                 <input type="text" id="first_name" name="first_name">
                             </div>
-                            <div>
-                                <label for="user_email">Email Address</label>
+                            <div class="formSec">
+                                <label for="user_email">EMAIL</label>
                                 <input type="email" id="user_email" name="email" placeholder="you@example.com">
                             </div>
-                            <div>
-                                <label for="user_password">Password</label>
-                                <input type="password" id="user_password" name="password">
+                            <div class="formSec">
+                                <label for="user_password">PASSWORD</label>
+                                <input type="password" id="user_password" name="password" required>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <label for="first_name">Last Name</label>
+                        <div class="formColumn" id="secondFormBox">
+                            <div class="formSec">
+                                <label for="first_name">LAST NAME</label>
                                 <input type="text" id="last_name" name="last_name">
                             </div>
-                            <div>
-                                <label for="quantity">Phone Number</label>
+                            <div class="formSec">
+                                <label for="phone_number">PHONE NUMBER</label>
+                                <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{10}">
                             </div>
-                                <input type="number" id="phone_number" name="phone_number" minlength="10" maxlength="10">
-                            </div>
-                            <div>
-                                <label for="confirmpassword">Confirm Password</label>
+                            <div class="formSec">
+                                <label for="confirmpassword">CONFIRM PASSWORD</label>
+                                <input type="password" id="user_password" name="password" required>
                             </div>
                         </div>
-                        <div>
-                            <button type="submit">Create Account</button>
-                        </div>
-                        <div>Already have an account?</div>
-                        <div>Log in</div>
                     </form>
+                </div>
+                <div id="rightBottom" class="rightElement">
+                    <div>
+                        <button type="submit">Create Account</button>
+                    </div>
+                    <div id="alreadyText">
+                        <div>Already have an account?</div>
+                        <a>Log in</a>
+                    </div>
                 </div>
             </div>
         </div>
